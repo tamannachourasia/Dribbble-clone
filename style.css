@@ -1,0 +1,587 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans';
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#page1 {
+    height: 100%;
+    width: 100%;
+}
+
+#nav {
+    height: 120px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+#nav-part1 {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav-part1 h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#nav-part2 {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#nav-part2 button {
+    padding: 15px 22px;
+    font-weight: 600;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    font-size: 17px;
+    margin: 0 10px;
+}
+
+#nav-part2 button:nth-child(1) {
+    background-color: transparent;
+    color: black;
+}
+
+#nav img {
+    height: 110px;
+}
+
+#content {
+    height: calc(100% - 120px);
+    width: 100%;
+    padding-top: 60px;
+}
+
+#content h3 {
+    background-color: #dacceb;
+    padding: 10px 16px;
+    width: fit-content;
+    border-radius: 50px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1vw;
+    font-family: "Source Serif 4";
+    font-weight: 100;
+}
+
+#content h1 {
+    font-size: 4.3vw;
+    line-height: 4.3vw;
+    text-align: center;
+    margin: 25px 0;
+    font-family: "Source Serif 4";
+    font-weight: 100;
+}
+
+#content h4 {
+    font-size: 1.1vw;
+    text-align: center;
+    font-weight: 500;
+    margin: 20px 0;
+    font-family: "Source Serif 4";
+}
+
+#content button {
+    padding: 22px 25px;
+    font-weight: 600;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    font-size: 1.1vw;
+    margin: 25px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#bottom {
+    height: 380px;
+    width: 100%;
+    padding: 5px;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+#bottom::-webkit-scrollbar {
+    display: none;
+}
+
+.elem {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    width: 260px;
+    background-color: royalblue;
+    margin-right: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.elem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.elem video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.elem .text-bottom {
+    height: 20%;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    color: whitesmoke;
+}
+
+#page2 {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    padding: 30px;
+    padding-top: 150px;
+}
+
+#page2>h1 {
+    text-align: center;
+    font-size: 3vw;
+    font-family: "Source Serif 4";
+    font-weight: 500;
+    margin-top: 120px;
+    margin-bottom: 50px;
+}
+
+.box {
+    height: 250px;
+    width: 330px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    transition: all ease 0.5s;
+    margin: 15px;
+}
+
+.box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-bottom {
+    height: 40%;
+    width: 100%;
+    background: linear-gradient(transparent, rgba(0, 0,0, 0.63));
+    position: absolute;
+    bottom: -40%;
+    transition: all ease 0.5s;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.box-bottom i {
+    background-color: white;
+    padding: 8px 9px;
+    color: black;
+    font-size: 1.2vw;
+    font-weight: 500;
+    border-radius: 50%;
+}
+
+.box-bottom h5 {
+    font-size: 1.3vw;
+    font-weight: 300;
+}
+
+.box:hover .box-bottom {
+    bottom: 0;
+}
+
+.box:hover {
+    box-shadow: 0px 2px 20px rgba(123, 123, 123, 0.498);
+}
+
+#page2 button {
+    padding: 22px 25px;
+    font-weight: 500;
+    border-color: black;
+    background-color: white;
+    color: black;
+    border-radius: 50px;
+    font-size: 1.1vw;
+    margin: 50px 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#page2 button:hover {
+    background-color: black;
+    color: white;
+}
+
+#page3 {
+    width: 100%;
+    height: 90vh;
+    background-color: #ffda79;
+    margin-top: 50%;
+}
+
+#page3-content h1 {
+    font-size: 4vw;
+    line-height: 4.1vw;
+    text-align: center;
+    font-family: "Source Serif 4";
+    font-weight: 100;
+    padding-top: 100px;
+}
+
+#page3-content h4 {
+    font-size: 1.5vw;
+    line-height: 2.3vw;
+    text-align: center;
+    font-weight: lighter;
+    font-family: "Source Serif 4";
+    padding-top: 50px;
+}
+
+#page3-content button {
+    padding: 22px 25px;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    font-size: 1.1vw;
+    margin: 50px 0;
+    position: relative;
+    left: 45%;
+    transform: translateX(-50%);
+}
+
+#page3-content button:nth-of-type(2) {
+    border-color: black;
+    background-color: white;
+    color: black;
+    left: 48%;
+}
+
+#page3-content h5 {
+    font-size: 1.5vw;
+    text-align: center;
+    font-weight: lighter;
+    padding-top: 20px;
+}
+
+#page3-content h5 span {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#scroll {
+    width: 100%;
+    height: 50vh;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    position: relative;
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    padding: 2vw;
+    animation-name: anime;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    margin-top: 30px;
+    animation-play-state: running;
+}
+
+#scroll img {
+    height: 22vh;
+    border-radius: 10px;
+    margin: 1vw;
+    width: 100%;
+    object-fit: cover;
+    object-position: 30% 30%;
+}
+
+@keyframes anime {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#scroll:hover #container {
+    animation-play-state: paused;
+}
+
+.image-wrapper {
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    margin: 0 1vw;
+}
+
+.image-wrapper p {
+    font-size: 1.2vw;
+}
+
+#footer {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+.footer-top {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+    justify-content: space-between;
+}
+
+.footer-top h4 {
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.footer-bottom {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 200px;
+}
+
+.footer-bottom h4 {
+    font-size: 1.2vw;
+    font-weight: 400;
+}
+
+.footer-bottom button {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: 400;
+    border: none;
+}
+
+.footer-bottom button:hover {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    #nav{
+        width: 100%;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+    }
+    .hide{
+        display: none;
+    }
+    #nav-part1 {
+        margin-top: 2.5vh;
+        width: 38vh;
+        gap: 1vh;
+        display: flex;
+        align-items: start;
+    }
+    #nav-part1 h4{
+        font-size: 14px;
+    }
+    #content h3 {
+        background-color: #dacceb;
+        padding: 8px 14px;
+        width: fit-content;
+        border-radius: 50px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 3.4vw;
+        font-family: "Source Serif 4";
+        font-weight: lighter;
+    }
+    #content h1 {
+        font-size: 7.3vw;
+        line-height: 6.3vw;
+        text-align: center;
+        margin: 25px 0;
+        font-family: "Source Serif 4";
+        font-weight: 100;
+    }
+    #content h4 {
+        font-size: 4vw;
+        text-align: center;
+        font-weight: 300;
+        margin: 20px 0;
+        font-family: "Source Serif 4";
+    }
+    #content button { 
+        font-size: 4vw;           
+    }
+    .elem {
+        position: relative;
+        display: inline-block;
+        height: 61%;
+        width: 190px;
+        margin-top: 2vh;
+        background-color: royalblue;
+        margin-right: 30px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    #page2>h1 {
+       margin-top: -100px;
+        text-align: center;
+        font-size: 7vw;
+        font-family: "Source Serif 4";
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    #page2 {
+       
+       height: 334vh;
+        width: 100%;
+        position: relative;
+        padding: 30px;
+        padding-top: 0;
+    }
+    .box {
+        height: 202px;
+        width: 311px;
+    }
+    .box-bottom h5 {
+        font-size: 4.3vw;
+        font-weight: 500;
+    }
+    .box-bottom i {
+        background-color: white;
+        padding: 8px 9px;
+        color: black;
+        font-size: 4.2vw;
+        font-weight: 500;
+        border-radius: 50%;
+    }
+    #page2 button {
+        font-size: 5.1vw;
+    }
+    #page3-content h1 {
+        font-size: 9vw;
+        line-height: 10.1vw;
+    }
+    #page3 {
+        width: 100%;
+        height: 74vh;
+        margin-top: 10%;
+    }
+
+    #page3-content h4 {
+    font-size: 6vw;
+    line-height: 7.3vw;
+    }
+    #page3-content button {
+    padding: 21px 25px;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    font-size: 3.1vw;
+    margin: 45px -5px;
+    position: relative;
+    left: 24%;
+    transform: translateX(-50%);
+     }
+#page3-content button:nth-of-type(2) {
+    left: 35%;
+}
+#page3-content h5 {
+    font-size: 3.5vw;
+}
+#scroll {
+    height: 33vh;
+    width: 444%;
+}
+.image-wrapper p {
+    font-size: 6.2vw;
+}
+@keyframes anime {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-120%);
+    }
+}
+.logo{
+    margin-left: 4vh;
+    height: 20vh;
+}
+.footer-top {
+    height: 25%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+.footer-bottom {
+    margin-top: 24vh;
+    margin-left: -10vh;
+}
+.text {
+    display: flex;
+    width: 118%;
+    gap: 12px;
+}
+.footer-top h4 {
+    font-size: 2.5vw;
+    font-weight: bold;
+}
+}
